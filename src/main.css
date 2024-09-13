@@ -4,23 +4,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: 	#ece0d1;
 }
 
 #navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #333;
+    background-color: 	#634832;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #38220f;
     border-radius: 8px;
     margin: 10px auto;
     max-width: 80%;
 }
 
 #navigation a {
-    color: #fff;
+    color: #e9d4c3;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -28,7 +28,16 @@ body {
 }
 
 #navigation a:hover {
-    background-color: #555;
+    background-color: #967259;
+}
+
+#navigation .g {
+    background-color: #3b2b1e; /* Unique color for the Minigame button */
+    color: white; /* Text color for contrast */
+}
+
+#navigation .g:hover {
+    background-color: #38220f; /* Hover effect for Minigame button */
 }
 
 #content {
@@ -105,6 +114,59 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#Researches ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+#Researches li {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Courses ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Courses li {
+    text-align: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 #disobedientHeading {
     width: 100%;
+}
+
+.sort-controls {
+    margin-bottom: 10px;
+}
+
+.sort-controls button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sort-controls button:hover {
+    background-color: #0056b3;
 }
