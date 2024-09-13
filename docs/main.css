@@ -44,7 +44,7 @@ body {
     max-width: 80%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f5f0e9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -54,7 +54,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #634832;
     padding-bottom: 10px;
     margin: 0;
 }
@@ -81,7 +81,7 @@ h2 {
 #profileImg {
     display: block;
     border-radius: 50%;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.233);
     width: 200px;
     height: 200px;
 }
@@ -97,6 +97,10 @@ h2 {
     height: 100px;
 }
 
+#githubImg:hover, #linkedinImg:hover {
+    transform: scale(1.05);
+}
+
 #Interests ul {
     display: flex;
     justify-content: space-between;
@@ -109,7 +113,8 @@ h2 {
     text-align: center;
     padding: 10px;
     margin: 0 10px;
-    background-color: #e0e0e0;
+    color: #38220f;
+    background-color: #dbc1ac;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -126,7 +131,8 @@ h2 {
     text-align: center;
     padding: 10px;
     margin: 0 10px;
-    background-color: #e0e0e0;
+    color: #38220f;
+    background-color: #dbc1ac;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -143,9 +149,25 @@ h2 {
 #Courses li {
     text-align: center;
     padding: 10px;
-    background-color: #e0e0e0;
+    color: #38220f;
+    background-color: #dbc1ac;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Courses li:hover {
+    transform: scale(1.05);
+    color: black;
+}
+
+#Researches li:hover {
+    transform: scale(1.05);
+    color: black;
+}
+
+#Interests li:hover {
+    transform: scale(1.05);
+    color: black;
 }
 
 
@@ -159,14 +181,15 @@ h2 {
 
 .sort-controls button {
     margin-right: 5px;
+    margin-top: 5px;
     padding: 5px 10px;
     border: none;
-    background-color: #007bff;
-    color: white;
+    background-color: 	#634832;
+    color: #e9d4c3;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .sort-controls button:hover {
-    background-color: #0056b3;
+    background-color: 	#967259;
 }
