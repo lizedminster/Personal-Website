@@ -257,3 +257,13 @@ h2 {
     transform: scale(1.05);
     color: #000000;
 }
+.custompattern {
+    /*https://www.cssportal.com/css-pattern-generator/ used for design*/
+	background: 
+		  radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#e6f1ff 54% 57%,#0000 59%) 0 calc(128px/2),
+		  radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#e6f1ff 54% 57%,#0000 59%) calc(128px/2) 0,
+		  radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#e6f1ff 54% 57%,#0000 59%),
+		  radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#e6f1ff 54% 57%,#0000 59%),
+		  #ffffff;
+	background-size: calc(128px/4.667) 128px,128px calc(128px/4.667);
+}
