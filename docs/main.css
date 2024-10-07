@@ -1,26 +1,18 @@
-/* chatGPT was used for some of this CSS Styling */
-:root {
-    --lightest: #ffffff;
-    --light1: #d8cdcb;
-    --light2: #b2a4a0;
-    --medium: #b89f79;
-    --dark2: #857c72;
-    --dark1: #9fb3bd;
-    --darkest: #303030;
-  }
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: 	#ffffff;
+    background-color: #ffffff;
+    cursor: url("https://pngimg.com/d/cursor_PNG50.png"),pointer; 
 }
 
+/* Navigation Styles */
 #navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: 	#c9c9c9;
+    background-color: #c9c9c9;
     padding: 10px;
     box-shadow: 0 4px 8px #484848;
     border-radius: 8px;
@@ -30,35 +22,32 @@ body {
 
 #navigation a {
     color: #ffffff;
-    box-shadow: 0 4px 8px #484848;
     background-color: #006699;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
+    box-shadow: 0 4px 8px #484848;
     transition: background-color 0.3s ease;
 }
 
 #navigation a:hover {
-    color: #ffffff;
-    box-shadow: 0 4px 8px #484848;
     background-color: #004263;
 }
 
 #navigation .g {
-    background-color: #ca7900; /* Unique color for the Minigame button */
-    color: #ffffff; /* Text color for contrast */
+    background-color: #ca7900;
 }
 
 #navigation .g:hover {
     background-color: #aa6600;
-    color: #ffffff; /* Hover effect for Minigame button */
 }
 
+/* Content Styles */
 #content {
     max-width: 80%;
     margin: 20px auto;
     padding: 20px;
-    color:#003854;
+    color: #003854;
     background-color: #c9c9c9;
     box-shadow: 0 4px 8px #484848;
     border-radius: 8px;
@@ -73,23 +62,18 @@ h2 {
     margin: 0;
 }
 
+/* Profile Styles */
 #me {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.profile-container {
+.profile-container, .profile-wrapper {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-top: 20px;
-}
-
-.profile-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 20px;
 }
 
 #profileImg {
@@ -117,40 +101,12 @@ h2 {
     transform: scale(1.05);
 }
 
-#Interests ul {
+/* Interests, Researches, Courses, Professionals Styles */
+#Interests ul, #Researches ul, #Professionals ul, #Goals ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 0;
-}
-
-#Interests li {
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-    margin: 0 10px;
-    color: #0b6b9b;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #484848;
-}
-
-#Researches ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-}
-
-#Researches li {
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-    margin: 0 10px;
-    color: #aa6600;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #484848;
 }
 
 #Courses ul {
@@ -162,59 +118,30 @@ h2 {
     margin: 0;
 }
 
-#Courses li {
-    text-align: center;
-    padding: 10px;
-    color: #0b6b9b;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px var(--darkest);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #484848;
-}
-
-#Professionals ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-}
-
-#Professionals li {
+#Interests li, #Researches li, #Courses li, #Professionals li, #Goals li {
     flex: 1;
     text-align: center;
     padding: 10px;
     margin: 0 10px;
-    color: #aa6600;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px #484848;
 }
 
-#Professionals li:hover {
+#Interests li, #Goals li, #Courses li {
+    color: #0b6b9b;
+}
+
+#Researches li, #Professionals li {
+    color: #aa6600;
+}
+
+#Interests li:hover, #Researches li:hover, #Courses li:hover, #Professionals li:hover, #Goals li:hover {
     transform: scale(1.05);
     color: #000000;
 }
 
-#Courses li:hover {
-    transform: scale(1.05);
-    color: #000000;
-}
-
-#Researches li:hover {
-    transform: scale(1.05);
-    color: #000000;
-}
-
-#Interests li:hover {
-    transform: scale(1.05);
-    color: #000000;
-}
-
-
-#disobedientHeading {
-    width: 100%;
-}
-
+/* Sort Controls Styles */
 .sort-controls {
     margin-bottom: 10px;
 }
@@ -228,34 +155,10 @@ h2 {
     box-shadow: 0 2px 4px #484848;
     color: #ffffff;
     border-radius: 4px;
-    cursor: pointer;
 }
 
 .sort-controls button:hover {
     background-color: #aa6600;
-}
-
-#Goals ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-}
-
-#Goals li {
-    flex: 1;
-    text-align: center;
-    padding: 10px;
-    margin: 0 10px;
-    color: #0b6b9b;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #484848;
-}
-
-#Goals li:hover {
-    transform: scale(1.05);
-    color: #000000;
 }
 .custompattern {
     /*https://www.cssportal.com/css-pattern-generator/ used for design*/
